@@ -10,18 +10,19 @@ type person struct{
 	Name string
 }
 
-type condition struct {
+type condition struct{
 
-	person YOUQ bool
+	person 
+	YOUQ bool
 }
 
 func main(){
 
 	Person1 := condition{
 		person: person{
-			Name: "Henry"
-		}
-		YOUQ: false
+			Name: "Henry",
+		},
+		YOUQ: false,
 	}
 
 	if Person1.Name == "gavin"{
@@ -33,7 +34,7 @@ func main(){
 		log.Fatalln(err)
 	}
 
-	err = template.Execute(os.Stdout, p1)
+	err = tmp.Execute(os.Stdout, Person1)
 	if err != nil{
 		log.Fatalln(err)
 	}
