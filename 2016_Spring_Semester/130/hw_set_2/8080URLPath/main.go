@@ -1,10 +1,10 @@
 package main 
 
-import {
+import (
 	"net/http"
 	"fmt"
 	"strings"
-}
+)
 
 func PathN(res http.ResponseWriter,req *http.Request){
 	name := strings.Split(req.URL.Path,"/")

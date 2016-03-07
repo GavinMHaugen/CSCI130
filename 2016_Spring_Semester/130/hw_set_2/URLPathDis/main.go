@@ -2,10 +2,10 @@
 
 package main
 
-import{
+import(
 	"net/http"
 	"io"
-}
+)
 
 func URLPath(res http.ResponseWriter,req *http.Request){
 	io.WriteString(res, req.URL.Path)

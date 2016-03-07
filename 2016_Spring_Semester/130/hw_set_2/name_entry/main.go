@@ -1,9 +1,9 @@
 package main 
 
-import{
+import(
 	"net/http"
 	"fmt"
-}
+)
 
 func PageMaker(res http.ResponseWriter, req *http.Request){
 	fmt.Fprint(res, <!DOCTYPE html>
