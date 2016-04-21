@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+</head>
+<body>
+	<div id = "container">
+	</div>
+	<script type="text/javasript">
+		var UnorderedList = function(){
+			var UOL = ["Key", "Ball", "Foot", "Apple"];
+			for(var k in UOL){
+				document.getElementById(k).addEventListener("click", function()){
+					alert(this.innerHTML);
+				});
+			};
+		};
+		UnorderedList();
+	</script>
+</body>
+</html>
