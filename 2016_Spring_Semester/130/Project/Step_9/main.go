@@ -4,20 +4,23 @@ import (
 	"html/template"
 	"log"
 	"github.com/nu7hatch/gouuid"
+	"io"
+	"fmt"
+	"strconv"
 	"encoding/json"
 	"encoding/base64"
 	"crypto/hmac"
 	"crypto/sha256"
-	"io"
-	"fmt"
-	"strconv"
 )
 
 var template1 *template.Template
+
+
 type UserData struct {
 	Name string
 	Age int
 }
+
 type User struct {
 	Uuid, Name, Hmac string
 	Password string
